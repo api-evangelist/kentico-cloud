@@ -1,0 +1,2027 @@
+{
+    "id": "107f0cfa7f155005969adce55c0accad",
+    "name": "Kentico Cloud",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "0bfacff83c2a92c1d194e2a2e2f4093a",
+            "name": "Order articles by publish date",
+            "url": "httpsdeliver.kenticocloud.com\/\/975bf280-fd91-488c-994c-2f04416e5ee3\/items",
+            "description": "Filter the content items by content type by including the `order` query parameter and a content element codename.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "system.type",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "order",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "ed8533e8d536f14e87c5560227816146",
+            "name": "View a content item by ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/3120ec15-a4a2-47ec-8ccd-c85ac8ac5ba5",
+            "description": "Retrieve metadata information about a content item specified by its internal ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "28a3159be1f0ba915faf1247391123cb",
+            "name": "Update a content item by ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/3120ec15-a4a2-47ec-8ccd-c85ac8ac5ba5",
+            "description": "Update an existing content item specified by its internal ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "24f5371c4f5af7d3eb1f63208a0c371d",
+            "name": "Delete a content item by ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/3120ec15-a4a2-47ec-8ccd-c85ac8ac5ba5",
+            "description": "Delete a content item specified by its internal ID. Note that deleting a content item deletes all of its language variants as well.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "bf81197bc7070755def420bfe64b9510",
+            "name": "Filtering based on date with Delivery API",
+            "url": "httpsdeliver.kenticocloud.com\/\/14372844-0a5d-434a-8423-605b8a631623\/items",
+            "description": "Filter content items directly in the API call using the `element.element_codename` query parameter and *publish from* and *publish until* elements.\n\nSee <https:\/\/developer.kenticocloud.com\/docs\/scheduling-content-unpublishing#section-filtering-by-date-with-the-delivery-api> for more details.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "system.type",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "elements.publish_until[gt]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "d8e02170c00710fde904ebe38043bc29",
+            "name": "View a content item by codename",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/codename\/on_roasts",
+            "description": "Retrieve metadata information about a content item specified by its codename.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "af29ae408ba4f516da7429dff7f171c0",
+            "name": "Update a content item by codename",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/codename\/on_roasts",
+            "description": "Update an existing content item specified by its codename.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "0ac82f7ad200b6060ddda38303d8fafb",
+            "name": "Delete a content item by codename",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/codename\/on_roasts",
+            "description": "Delete a content item specified by its codename.\n\nNote that deleting a content item deletes all of its language variants as well.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "02d1f1691b66f9c2588928cf2920aa14",
+            "name": "View a language variant by language codename",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/3120ec15-a4a2-47ec-8ccd-c85ac8ac5ba5\/variants\/codename\/en-US",
+            "description": "Retrieve content of a variant of a content item. The content item is specified by its internal ID and the project language is specified by its codename.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "ea92ee269b1b5d1a4724f98937156251",
+            "name": "Upsert a variant by language codename",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/3120ec15-a4a2-47ec-8ccd-c85ac8ac5ba5\/variants\/codename\/en-US",
+            "description": "Add content to a variant in an active project language, or update an existing language variant. The content item is specified by its internal ID and the project language is specified by its codename.\r\n\r\n**Note:** Only the elements specified in the request body will be modified. Any existing comments attached to these elements will be lost on update.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "aa1472a742d27d9b25a14e2bc5300697",
+            "name": "Delete a variant by language codename",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/3120ec15-a4a2-47ec-8ccd-c85ac8ac5ba5\/variants\/codename\/en-US",
+            "description": "Delete a specific language variant. The content item is specified by its external ID and the project language is specified by its codename.\r\n\r\nNote that when you delete the last variant of a content item, the whole content item is deleted.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "384af1a6a8f5a04b335c4f8d9520bc81",
+            "name": "Adding localized content",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/external-id\/ext-cafe-brno-59713\/variants\/codename\/en-US",
+            "description": "Add content in a specific language to your new content item by performing an upsert.\r\n\r\n* In the request URL, you need to specify the content item you are importing to (for example, `\/items\/external-id\/ext-cafe-brno-59713`) and the language of the variant (for example, `\/variants\/codename\/en-US`).\r\n* The request body must contain the `elements` object in which you specify only the content elements you want to update. Omitted elements will remain unchanged.\r\n\r\nSee <https:\/\/developer.kenticocloud.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "5efc6f0f7596f6871cebc88715d960c0",
+            "name": "List segments of a visitor",
+            "url": "httpsdeliver.kenticocloud.com\/\/visitor\/569030c7-52a5-44f5-a243-c5285b3eb24e\/7888c9a3824a11f1\/segments",
+            "description": "Retrieve the names of segments that the specified visitor belongs to.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "4bbc8439bfa80540c50b18e69e1c117f",
+            "name": "Creating a content item",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/external-id\/ext-cafe-brno-59713",
+            "description": "One of the ways to import content to your project is to send a PUT request to the `<cmApiUrl>\/items\/external-id\/<your item ID>` endpoint.\r\n\r\nIn the body of the request, specify these properties:\r\n\r\n* `name` \u2013 string with a display name of the new content item.\r\n* `type` \u2013 reference to a content type.\r\n* (Optional) `sitemap_locations` \u2013 array of references to sitemap locations.\r\n\r\nSee <https:\/\/developer.kenticocloud.com\/docs\/importing-to-kentico-cloud#section-1-creating-a-content-item> for ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "d16ea706a4ece9e5fa010c280eb2763b",
+            "name": "View a language variant by language ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/3120ec15-a4a2-47ec-8ccd-c85ac8ac5ba5\/variants\/00000000-0000-0000-0000-000000000000",
+            "description": "Retrieve content of a language variant of a content item. Both the content item and the project language are specified by their internal IDs.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "486700e2478fbaaab8588d5b3f44979a",
+            "name": "Upsert a variant by language ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/3120ec15-a4a2-47ec-8ccd-c85ac8ac5ba5\/variants\/00000000-0000-0000-0000-000000000000",
+            "description": "Add content to a variant in an active project language, or update an existing language variant. Both the content item and project language are specified by their internal IDs.\r\n\r\n**Note:** Only the elements specified in the request body will be modified. Any existing comments attached to these elements will be lost on update.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "a44717ccd24a1126652b94cad12a5a7f",
+            "name": "Delete a variant by language ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/3120ec15-a4a2-47ec-8ccd-c85ac8ac5ba5\/variants\/00000000-0000-0000-0000-000000000000",
+            "description": "Delete a specific language variant. Both the content item and the project language are specified by their internal IDs.\r\n\r\nNote that when you delete the last variant of a content item, the whole content item is deleted.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "98af85d596be61b48e6bab6d8d5559f9",
+            "name": "View an asset by external ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/assets\/external-id\/which-brewing-fits-you",
+            "description": "Retrieve information about a single asset specified by its external ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "089bbe84f4dc18417f4e635b7918f93b",
+            "name": "Upsert an asset by external ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/assets\/external-id\/which-brewing-fits-you",
+            "description": "Add a new asset or update an existing asset specified by its external ID.\r\n\r\n**Note:** If no asset with the specified external ID exists in the project, the system will try to create one. For existing assets, the API updates only the specified asset's descriptions and title.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "dd143f91c593210690647e1ea6c2392a",
+            "name": "Delete an asset by ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/assets\/external-id\/which-brewing-fits-you",
+            "description": "Removes an unused asset specified by its external ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "3828f6b5c7f567a973c7cc6c7d3b82ae",
+            "name": "List assets",
+            "url": "httpsdeliver.kenticocloud.com\/\/assets",
+            "description": "Retrieve a dynamically paginated list of assets.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "161847479144811d37af65471b1e9462",
+            "name": "Add an asset",
+            "url": "httpsdeliver.kenticocloud.com\/\/assets",
+            "description": "Use a file reference to link an existing [binary file](https:\/\/developer.kenticocloud.com\/v1\/reference#content-management-api-upload-file) to a new asset. You can also create assets by upserting (`PUT \/assets\/external-id\/<external_id>`), see [Upsert an asset](https:\/\/developer.kenticocloud.com\/v1\/reference#content-management-api-upsert-asset-by-external-id).\r\n\r\n**Note:** Each binary file can be referenced only by a single asset.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "2e3c44291c651d35134dd3369deeb46b",
+            "name": "Displaying the right content",
+            "url": "httpsdeliver.kenticocloud.com\/\/8d155914-6674-4f17-8104-3b1c5c2b37e4\/items\/partner_promotion",
+            "description": "Retrieve one personalization variant you want to display. To learn more about retrieving content, consult the [Delivery API reference](https:\/\/developer.kenticocloud.com\/reference#delivery-api).\n\nSee <https:\/\/developer.kenticocloud.com\/docs\/personalizing-content#section-displaying-the-right-content> for more examples.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "902525320f5cd4586daa98d15783179b",
+            "name": "View an asset by ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/assets\/fcbb12e6-66a3-4672-85d9-d502d16b8d9c",
+            "description": "Modifies properties of an asset specified by its internal ID.\r\n\r\nNote: This endpoint only allows updating of asset descriptions and title.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "22a014111208a268722753d661e50675",
+            "name": "Update an asset by ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/assets\/fcbb12e6-66a3-4672-85d9-d502d16b8d9c",
+            "description": "Retrieve a dynamically paginated list of assets.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "8c88ee6fe5c99a0cb1a94d04f9405d38",
+            "name": "Delete an asset by ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/assets\/fcbb12e6-66a3-4672-85d9-d502d16b8d9c",
+            "description": "Removes an unused asset specified by its internal ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "c02cf2f7fac25751826281036caa74c5",
+            "name": "View a language variant by language ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/external-id\/59713\/variants\/00000000-0000-0000-0000-000000000000",
+            "description": "Retrieve content of a variant of a content item. The content item is specified by its external ID and the project language is specified by its internal ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "9a441802d76edbe4e0586ff7127279d3",
+            "name": "Upsert a variant by language ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/external-id\/59713\/variants\/00000000-0000-0000-0000-000000000000",
+            "description": "Add content to a variant in an active project language, or update an existing language variant. The content item is specified by its external ID and the project language is specified by its internal ID.\r\n\r\n**Note:** Only the elements specified in the request body will be modified. Any existing comments attached to these elements will be lost on update.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "a499bff395c12b83a26a6572f28719b3",
+            "name": "Delete a variant by language ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/external-id\/59713\/variants\/00000000-0000-0000-0000-000000000000",
+            "description": "Delete a specific language variant. The content item is specified by its external ID and the project language is specified by its internal ID.\r\n\r\nNote that when you delete the last variant of a content item, the whole content item is deleted.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "c23d44e2a417c16398414327a3e00543",
+            "name": "View a language variant by language codename",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/external-id\/59713\/variants\/codename\/en-US",
+            "description": "Retrieve content of a variant of a content item. The content item is specified by its external ID and the project language is specified by its codename.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "9d6604fba733026daf86b2b493f0cd91",
+            "name": "Upsert a variant by language codename",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/external-id\/59713\/variants\/codename\/en-US",
+            "description": "Add content to a variant in an active project language, or update an existing language variant. The content item is specified by its external ID and the project language is specified by its codename.\r\n\r\n**Note:** Only the elements specified in the request body will be modified. Any existing comments attached to these elements will be lost on update.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "0431df773b30db1aa5d106740aad7096",
+            "name": "Create a contact profile",
+            "url": "httpsdeliver.kenticocloud.com\/\/contact",
+            "description": "Submit the visitor's email address and other information.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "ede0d4cc15a8d71b937e4109c1a195bc",
+            "name": "Record a custom activity",
+            "url": "httpsdeliver.kenticocloud.com\/\/activity",
+            "description": "Log a custom action for a specified visitor.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "c9b1be6efa0627e5785406b98864259d",
+            "name": "Record a new session",
+            "url": "httpsdeliver.kenticocloud.com\/\/session",
+            "description": "Log a new session for a specified visitor.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "c3e26b7c2f5416058cd3938e22a96bce",
+            "name": "Getting localized content items",
+            "url": "httpsdeliver.kenticocloud.com\/\/975bf280-fd91-488c-994c-2f04416e5ee3\/items\/on_roasts",
+            "description": "Get a content item in a specific language variant by using the `language` parameter.\n\nSee [Getting localized content items](https:\/\/developer.kenticocloud.com\/docs\/localization#section-getting-localized-content-items) for more details.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "language",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "b5e5612de0e849a849eec8e5b36ef989",
+            "name": "View a content Item by external ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/external-id\/59713",
+            "description": "Retrieve metadata information about a content item specified by its external ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "a2bcc2418c7c4eb955a373a8a3dbe06a",
+            "name": "Update a content item by external ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/external-id\/59713",
+            "description": "Add a new content item or update an existing content item specified by its external ID.\r\n\r\n**Note:** If no content item with the specified external ID exists in the project, the system will try to create one. For existing content items, the API updates the content item's name and sitemap locations.\r\nYou can also specify the external ID when [adding content items](https:\/\/developer.kenticocloud.com\/v1\/reference#content-management-api-add-item) via the POST method.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "0e44b917d1432aa3003c8984ec55f6cd",
+            "name": "List language variants",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/codename\/on_roasts\/variants",
+            "description": "Retrieve a list of language variants of a content item specified by its codename.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "f593ce9b13ef0f3f7f949597a4d10390",
+            "name": "View a taxonomy group",
+            "url": "httpsdeliver.kenticocloud.com\/\/975bf280-fd91-488c-994c-2f04416e5ee3\/taxonomies\/personas",
+            "description": "Retrieve a specific taxonomy group from your project by specifying its codename.\n\nSee <https:\/\/developer.kenticocloud.com\/v1\/reference#view-a-taxonomy-group> for more details.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "8c66e3bad625171d2bf72bde5e8246a3",
+            "name": "View data of visitor by ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/uid\/7888c9a3824a11f1",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "eb0cb38c084b22ebcaef5f470da9e331",
+            "name": "Delete data of visitor by ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/uid\/7888c9a3824a11f1",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "9e2238902764adbb343ac4c988b122f0",
+            "name": "List language variants",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/3120ec15-a4a2-47ec-8ccd-c85ac8ac5ba5\/variants",
+            "description": "Retrieve a list of language variants of a content item specified by its internal ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "00549be2078f69b696a51204acc4b44a",
+            "name": "View a content type",
+            "url": "httpsdeliver.kenticocloud.com\/\/975bf280-fd91-488c-994c-2f04416e5ee3\/types\/coffee",
+            "description": "Retrieve a specific content type from your project by specifying its codename.\n\nSee <https:\/\/developer.kenticocloud.com\/v1\/reference#view-a-content-type> for more details.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "041cbc09609353cb1206bfd7d01935ee",
+            "name": "List visitors of a segment",
+            "url": "httpsdeliver.kenticocloud.com\/\/segment\/569030c7-52a5-44f5-a243-c5285b3eb24e\/{SegmentName}\/visitors",
+            "description": "Retrieve visitors that match the specified segment.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "SegmentName",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "ab851b0ee13c92c687b329bc6730b68b",
+            "name": "List content items",
+            "url": "httpsdeliver.kenticocloud.com\/\/items",
+            "description": "Retrieve a dynamically paginated list of content items.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "869abe93d69ee081e74e04157d5f48da",
+            "name": "Add a content item",
+            "url": "httpsdeliver.kenticocloud.com\/\/items",
+            "description": "Create a new content item based on a specific content type. Content items do NOT contain any content themselves, but serve as wrappers for individual language variants.\n\nSee <https:\/\/developer.kenticocloud.com\/v1\/reference#content-management-api-add-item> for details about adding content to a specific language variant.\n\nIf you are importing content from a different system and want to use the same identifiers for your content as in the previous system, you can use the `external_id` body attribute",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "788b09505c51f9ff009ac691d8926e6d",
+            "name": "List taxonomy groups",
+            "url": "httpsdeliver.kenticocloud.com\/\/975bf280-fd91-488c-994c-2f04416e5ee3\/taxonomies",
+            "description": "Retrieve a paginated list of taxonomy groups in your project.\n\nBy default, the API returns all taxonomy groups ordered alphabetically by codename, but [pagination can be customized](https:\/\/developer.kenticocloud.com\/v1\/reference#listing-response).\n\nSee <https:\/\/developer.kenticocloud.com\/v1\/reference#list-taxonomy-groups> for more details.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "af9b451d8e638a2b2d0a35a137116e5a",
+            "name": "Retrieving visitor's segments",
+            "url": "httpsdeliver.kenticocloud.com\/\/visitor\/569030c7-52a5-44f5-a243-c5285b3eb24e\/e3e9e191a12b9257\/segment",
+            "description": "Use the Personalization API to retrieve the list of segments that the specified visitor belongs to.\n\n* Authenticate the request using your Personalization API Key.\n* Specify the User ID of the visitor you are asking about.\n \nSee <https:\/\/developer.kenticocloud.com\/docs\/personalizing-content#section-retrieving-visitor-s-segments> for more details.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "4b322168cdd6a1d7c5794948bd89dbdb",
+            "name": "View a language variant by language ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/codename\/on_roasts\/variants\/00000000-0000-0000-0000-000000000000",
+            "description": "Retrieve content of a variant of a content item. The content item is specified by codename and the project language is specified its internal ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "50c68f4f7f41484cda63f4efa1577ab1",
+            "name": "Upsert a variant by language ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/codename\/on_roasts\/variants\/00000000-0000-0000-0000-000000000000",
+            "description": "Add content to a variant in an active project language, or update an existing language variant. The content item is specified by its codename and the project language is specified by its internal ID.\r\n\r\n**Note:** Only the elements specified in the request body will be modified. Any existing comments attached to these elements will be lost on update.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "6c07c05b529de7fea4f3b20860f400ba",
+            "name": "Delete a variant by language ID",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/codename\/on_roasts\/variants\/00000000-0000-0000-0000-000000000000",
+            "description": "Delete a specific language variant. The content item is specified by codename and the project language is specified its internal ID.\r\n\r\nNote that when you delete the last variant of a content item, the whole content item is deleted.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "647831eee231b44f1aa4ebaacf0d3bee",
+            "name": "List content types",
+            "url": "httpsdeliver.kenticocloud.com\/\/975bf280-fd91-488c-994c-2f04416e5ee3\/types",
+            "description": "Retrieve a list of content types in your project.\n\nSee <https:\/\/developer.kenticocloud.com\/v1\/reference#list-content-types> for more details.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "31576870b684c48d6c1904cbbb2979dc",
+            "name": "View a language variant by language codename",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/codename\/on_roasts\/variants\/codename\/en-US",
+            "description": "Retrieve content of a language variant of a content item. Both the content item and the language are specified by their codenames.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "5b9c891e77e1be2911d309c14f6725ef",
+            "name": "Upsert a variant by language codename",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/codename\/on_roasts\/variants\/codename\/en-US",
+            "description": "Add content to a variant in an active project language, or update an existing language variant. Both the content item and project language are specified by their codenames.\r\n\r\n**Note:** Only the elements specified in the request body will be modified. Any existing comments attached to these elements will be lost on update.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "e50947d4d148705a882e69184ba5c31e",
+            "name": "Getting items by localized URL slug",
+            "url": "httpsdeliver.kenticocloud.com\/\/",
+            "description": "Get a *Home* content item whose URL slug in Spanish is *inicio* by using the following parameters:\n\n* `language=es-ES` \u2013 specifies the codename of the requested language.\n* `system.type=home` \u2013 filters content items by their content type.\n* `elements.url_pattern=inicio` \u2013 filters content items by a value of a specific content element.\n\nSee [Getting items by localized URL slug](https:\/\/developer.kenticocloud.com\/docs\/localization#section-getting-items-by-localized-url-slug) for more details",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "529effd92fc06c1f5d87b44b4d894a54",
+            "name": "Validate project content",
+            "url": "httpsdeliver.kenticocloud.com\/\/validate",
+            "description": "Check your project's content items for issues, such as:\r\n\r\n* Content elements are [referencing](https:\/\/developer.kenticocloud.com\/v1\/reference#content-management-api-reference-object) non-existing objects.\r\n* Values of certain content elements do not meet the limitations set in content types.\r\n\r\nUse the endpoint after successfully importing content to your project.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "526d7229830ad244563ed517776a6ed7",
+            "name": "List language variants",
+            "url": "httpsdeliver.kenticocloud.com\/\/items\/external-id\/59713\/variants",
+            "description": "Retrieve a list of language variants of a content item specified by its external ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "5d2082f3bd660720d0a17b96ef749b33",
+            "name": "View data of visitor by email",
+            "url": "httpsdeliver.kenticocloud.com\/\/email\/lola.mira@blabla.com",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "d647e755c7eb40aeb712d6a925dbac72",
+            "name": "Delete data of visitor by email",
+            "url": "httpsdeliver.kenticocloud.com\/\/email\/lola.mira@blabla.com",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "0f5e7deed79cf7a5c225f243cb241e25",
+            "name": "Upload a binary file",
+            "url": "httpsdeliver.kenticocloud.com\/\/files\/which-brewing-fits-you-1080px.jpg",
+            "description": "Add a new file. The uploaded file will not be visible in the Kentico Cloud UI unless there is an asset using it, see how to [add an asset](https:\/\/developer.kenticocloud.com\/v1\/reference#content-management-api-add-asset).\r\n\r\n**Note:** Maximum size limit for binary files is 100 MB.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "File",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "a49ab0bbbfb9bcf90449900068ed1fd8",
+            "name": "Previewing an article",
+            "url": "httpsdeliver.kenticocloud.com\/\/which_brewing_fits_you_",
+            "description": "Preview a specific content item.\n\nSee <https:\/\/developer.kenticocloud.com\/docs\/preview-content-via-api> for details.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        },
+        {
+            "id": "653a22f31669645569ec14ae184103b1",
+            "name": "View a content type element",
+            "url": "httpsdeliver.kenticocloud.com\/\/975bf280-fd91-488c-994c-2f04416e5ee3\/types\/coffee\/elements\/processing",
+            "description": "Retrieve a specific content type element by specifying its codename and its parent content type.\n\nSee <https:\/\/developer.kenticocloud.com\/v1\/reference#view-a-content-type-element> for more details.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Content",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "107f0cfa7f155005969adce55c0accad",
+            "rawModeData": ""
+        }
+    ]
+}
