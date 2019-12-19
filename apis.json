@@ -1,0 +1,79 @@
+{
+    "name": "Kentico Cloud",
+    "description": "Kentico Cloud is the #1 CMS that enables digital teams to collaborate quickly to create engaging personalized experiences across any device. Free 30-day trial!",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28870-kenticocloud-com.jpg",
+    "tags": [
+        "cloud",
+        "have api",
+        "relative data",
+        "service api",
+        "webhook implementations"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/kentico-cloud\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Kentico Cloud",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28870-kenticocloud-com.jpg",
+            "humanURL": "https:\/\/kenticocloud.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/kentico-cloud.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/kentico-cloud-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog RSS",
+            "url": "https:\/\/kenticocloud.com\/rss"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/kentico"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/kenticocloud.com\/"
+        },
+        {
+            "type": "Blog",
+            "url": "https:\/\/kenticocloud.com\/blog"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/kentico"
+        },
+        {
+            "type": "Partners",
+            "url": "https:\/\/kenticocloud.com\/partners"
+        },
+        {
+            "type": "Pricing",
+            "url": "https:\/\/kenticocloud.com\/pricing"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/kenticocloud"
+        },
+        {
+            "type": "Webhooks",
+            "url": "https:\/\/developer.kenticocloud.com\/docs\/webhooks"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/kenticocloud.com"
+        }
+    ]
+}
